@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Deny everything by default. Add collection-specific rules after defining
+    // a real authenticated data model and custom admin claims.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

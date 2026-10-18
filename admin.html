@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — AikiNearMe</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar"><a class="brand" href="index.html"><span class="logo">AN</span><span><b>AikiNearMe</b><small>Administration</small></span></a><nav><a href="index.html">Home</a><a href="dashboard.html">Provider dashboard</a></nav></header>
+<main class="page-wrap"><div class="page-heading"><div><small>RESTRICTED WORKSPACE</small><h1>Admin dashboard</h1><p class="muted">This standalone demo uses local browser data and is not secure for production administration.</p></div></div>
+<div class="warning"><b>Security notice:</b> do not publish an admin page with privileged access until Firebase Authentication and server-side admin role checks are configured.</div>
+<div class="stats-grid" id="adminStats"></div>
+<div class="dashboard-layout"><section class="panel"><h2>Provider moderation</h2><div id="adminProviders"></div></section><section class="panel"><h2>Bookings</h2><div id="adminBookings"></div></section></div>
+<section class="panel"><h2>Reports</h2><p class="muted">Reports created in this browser appear here.</p><div id="adminReports"></div></section>
+<section class="panel"><h2>Export demo data</h2><p class="muted">Download the current browser demo data as JSON.</p><button class="btn" id="exportData">Export JSON</button><button class="btn btn-danger" id="clearDemoData">Clear demo data</button><div id="adminMessage" role="status"></div></section>
+</main><script type="module" src="js/admin.js"></script></body></html>

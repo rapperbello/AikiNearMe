@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Request a service — AikiNearMe</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar"><a class="brand" href="index.html"><span class="logo">AN</span><span><b>AikiNearMe</b><small>Local services made easy</small></span></a><nav><a href="index.html">Home</a><a href="dashboard.html">Provider dashboard</a></nav></header>
+<main class="page-wrap narrow"><a href="index.html" class="back-link">← Back home</a><div class="panel"><small>BOOKING REQUEST</small><h1>Request a service</h1><p class="muted">Your request is saved in this browser demo. Connect Firebase before using it with real customers.</p>
+<form id="bookingForm" class="form-grid">
+<label>Provider<input id="providerName" readonly placeholder="Choose a provider from the home page"></label>
+<label>Service needed<input id="serviceNeeded" required placeholder="e.g. Fix leaking pipe"></label>
+<label>Preferred date<input id="preferredDate" type="date" required></label>
+<label>Preferred time<select id="preferredTime" required><option value="">Choose a time</option><option>Morning (8am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option></select></label>
+<label>Your location<input id="bookingLocation" required placeholder="Area, city"></label>
+<label class="full">Short description<textarea id="bookingDescription" rows="4" maxlength="500" required placeholder="Describe the work needed"></textarea></label>
+<label class="full">Contact phone (shared only with the selected provider for this request)<input id="customerPhone" type="tel" inputmode="tel" required placeholder="Your phone number"></label>
+<div class="full"><button class="btn" type="submit">Submit booking request</button></div></form><div id="bookingMessage" role="status"></div></div>
+<section class="panel"><h2>My booking requests</h2><div id="myBookings"></div></section></main>
+<script type="module" src="js/booking.js"></script></body></html>

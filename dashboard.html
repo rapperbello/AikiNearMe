@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Provider dashboard — AikiNearMe</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar"><a class="brand" href="index.html"><span class="logo">AN</span><span><b>AikiNearMe</b><small>Provider workspace</small></span></a><nav><a href="index.html">Home</a><a href="admin.html">Admin</a></nav></header>
+<main class="page-wrap"><div class="page-heading"><div><small>PROFESSIONAL WORKSPACE</small><h1>Provider dashboard</h1><p class="muted">Create and manage your local service listing.</p></div><span class="pill">Demo mode</span></div>
+<div class="dashboard-layout"><section class="panel"><h2>Your provider profile</h2><form id="providerForm" class="form-grid">
+<label>Business / display name<input id="businessName" required maxlength="80"></label>
+<label>Primary service<select id="providerService" required></select></label>
+<label>City<select id="providerCity" required><option value="">Choose city</option><option>Abuja</option><option>Lagos</option><option>Kano</option><option>Kaduna</option><option>Port Harcourt</option><option>Ibadan</option><option>Jos</option><option>Other</option></select></label>
+<label>Starting price (₦)<input id="providerPrice" type="number" min="0" max="100000000" required></label>
+<label class="full">Description<textarea id="providerDescription" rows="3" maxlength="500" required></textarea></label>
+<label class="full">Services offered (comma-separated)<input id="providerServices" placeholder="Installation, repair, maintenance"></label>
+<label class="full">Portfolio image URL (optional)<input id="providerImage" type="url" placeholder="https://…"></label>
+<label class="check-row full"><input id="providerAvailable" type="checkbox" checked> Available for new requests</label>
+<div class="full"><button class="btn" type="submit">Save profile</button></div></form><div id="providerMessage" role="status"></div></section>
+<aside><section class="panel"><h2>Visibility plans</h2><p class="muted">Demo checkout records a request only. It does not take money or activate a paid plan.</p><div id="plans"></div></section>
+<section class="panel"><h2>Booking requests</h2><div id="providerBookings"></div></section></aside></div></main>
+<script type="module" src="js/dashboard.js"></script></body></html>
